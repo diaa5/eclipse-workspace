@@ -53,11 +53,7 @@ public class Registerarion {
 	   new ElementActions(driver).type(alias, "abc");
 	   new ElementActions(driver).click(create);
 
-	  /* URL = driver.getCurrentUrl();
-	  Assert.assertEquals(URL, "https://play.google.com/store/apps");
-	   Assertions.assertElementAttribute(driver, category, "Text", "Education");
-	   new ElementActions(driver).click(app_button);
-	   Assertions.assertElementAttribute(driver, app_name, "Text", "TED");*/
+
    }
 
 }

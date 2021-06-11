@@ -1,10 +1,7 @@
 package task1;
-import org.testng.Assert;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import com.shaft.gui.element.ElementActions;
 import com.shaft.validation.Assertions;
 
@@ -38,7 +35,9 @@ public class Cart_checkout {
  	   new ElementActions(driver).click(agree);
  	   new ElementActions(driver).click(proceed_4);
  	   new ElementActions(driver).click(select_pay);
+ 	   Assertions.assertElementAttribute(driver, confirm, "Text", "I confirm my order");
  	   new ElementActions(driver).click(confirm);
+ 	   
  	   
     }
     
