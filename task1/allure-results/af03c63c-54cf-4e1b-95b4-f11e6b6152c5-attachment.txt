@@ -1,0 +1,121 @@
+################################################################################################################################################
+Detected SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
+################################################################################################################################################
+
+[ReportManager] File Action [getAbsolutePath] successfully performed. With the following test data [Relative Folder Path: "target/downloadedFiles/"]. @11-06-2021 05:54:55.0359 AM
+[ReportManager] Attempting to run locally on: [Windows-64], [GoogleChrome]. @11-06-2021 05:54:55.0466 AM
+[ReportManager] Identifying OS/Driver combination and selecting the correct driver version automatically. Please note that if a new driver executable will be downloaded it may take some time... @11-06-2021 05:54:55.0469 AM
+[ReportManager] Successfully Opened Google Chrome. @11-06-2021 05:54:58.0277 AM
+[ReportManager] Target URL: [http://automationpractice.com/index.php] @11-06-2021 05:54:58.0298 AM
+[ReportManager] Initial URL: [data:,] @11-06-2021 05:54:58.0357 AM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20210611-055454", Target File: "\1623383706229_beforeMethod.gif"]. @11-06-2021 05:55:07.0892 AM
+[ReportManager] Browser Action [navigateToURL] successfully performed. With the following test data [http://automationpractice.com/index.php]. @11-06-2021 05:55:08.0871 AM
+[ReportManager] ws.schild.jave.EncoderException:
+Exit code of ffmpeg encoding run is 1
+ws.schild.jave.Encoder.encode(Encoder.java:572)
+ws.schild.jave.Encoder.encode(Encoder.java:351)
+ws.schild.jave.Encoder.encode(Encoder.java:318)
+com.shaft.gui.video.RecordManager.encodeRecording(RecordManager.java:116)
+com.shaft.gui.video.RecordManager.attachVideoRecording(RecordManager.java:83)
+com.shaft.tools.listeners.InvokedMethodListener.afterInvocation(InvokedMethodListener.java:107)
+org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:794)
+org.testng.TestRunner.run(TestRunner.java:596)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+org.testng.SuiteRunner.run(SuiteRunner.java:276)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+org.testng.TestNG.runSuites(TestNG.java:1063)
+org.testng.TestNG.run(TestNG.java:1031)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) @11-06-2021 05:55:37.0656 AM
+[ReportManager] Successfully created attachment [Video Recording - beforeMethod] @11-06-2021 05:55:39.0815 AM
+[ReportManager] Successfully created attachment [Animated Gif - beforeMethod] @11-06-2021 05:55:39.0823 AM
+
+################################################################################################################################################
+Starting Execution:	[1 out of 1] test cases in the current suite
+Test Method:		[test.Checkout.checkout]
+################################################################################################################################################
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20210611-055454", Target File: "\1623383741725_checkout.gif"]. @11-06-2021 05:55:41.0819 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Sign in]. @11-06-2021 05:55:45.0207 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [diaatest46@gmail.com]. @11-06-2021 05:55:46.0040 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [123456]. @11-06-2021 05:55:46.0808 AM
+[ReportManager] Element Action [keyPress] successfully performed. With the following test data [ENTER]. @11-06-2021 05:55:48.0896 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Home]. @11-06-2021 05:55:53.0284 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Faded Short Sleeve T-shirts $16.51]. @11-06-2021 05:55:57.0992 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Add to cart]. @11-06-2021 05:55:59.0413 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Proceed to checkout]. @11-06-2021 05:56:02.0917 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Proceed to checkout]. @11-06-2021 05:56:05.0278 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Proceed to checkout]. @11-06-2021 05:56:07.0416 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [I agree to the terms of service and will adhere to them unconditionally.]. @11-06-2021 05:56:08.0533 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Proceed to checkout]. @11-06-2021 05:56:10.0730 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Pay by bank wire (order processing will be longer)]. @11-06-2021 05:56:12.0783 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [I confirm my order]. @11-06-2021 05:56:16.0160 AM
+[ReportManager] ws.schild.jave.EncoderException:
+Exit code of ffmpeg encoding run is 1
+ws.schild.jave.Encoder.encode(Encoder.java:572)
+ws.schild.jave.Encoder.encode(Encoder.java:351)
+ws.schild.jave.Encoder.encode(Encoder.java:318)
+com.shaft.gui.video.RecordManager.encodeRecording(RecordManager.java:116)
+com.shaft.gui.video.RecordManager.attachVideoRecording(RecordManager.java:83)
+com.shaft.tools.listeners.InvokedMethodListener.afterInvocation(InvokedMethodListener.java:107)
+org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:636)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+org.testng.TestRunner.privateRun(TestRunner.java:794)
+org.testng.TestRunner.run(TestRunner.java:596)
+org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+org.testng.SuiteRunner.run(SuiteRunner.java:276)
+org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+org.testng.TestNG.runSuites(TestNG.java:1063)
+org.testng.TestNG.run(TestNG.java:1031)
+org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) @11-06-2021 05:56:21.0363 AM
+[ReportManager] Successfully created attachment [Video Recording - checkout] @11-06-2021 05:56:21.0364 AM
+[ReportManager] Successfully created attachment [Animated Gif - checkout] @11-06-2021 05:56:21.0580 AM
+[ReportManager] Successfully created attachment [Selenium WebDriver Logs - performance] @11-06-2021 05:56:22.0129 AM
+[ReportManager] Successfully created attachment [Selenium WebDriver Logs - browser] @11-06-2021 05:56:22.0135 AM
+[ReportManager] Successfully created attachment [Selenium WebDriver Logs - driver] @11-06-2021 05:56:22.0952 AM
+[ReportManager] Browser Action [closeCurrentWindow] successfully performed. @11-06-2021 05:56:23.0801 AM
+[ReportManager] Successfully created attachment [Browser Action Test Data - closeCurrentWindow - Actual Value] @11-06-2021 05:56:23.0804 AM
+[ReportManager] Successfully created attachment [Video Recording - afterMethod] @11-06-2021 05:56:26.0909 AM
+
+################################################################################################################################################
+Test Closure Activities
+################################################################################################################################################
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @11-06-2021 05:56:27.0002 AM
+
+################################################################################################################################################
+This test run was powered by SHAFT Engine Version: [SHAFT Engine v5.3.20210519]
+SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
+################################################################################################################################################

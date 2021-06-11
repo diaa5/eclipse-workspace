@@ -1,0 +1,41 @@
+package test;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import com.shaft.gui.browser.BrowserActions;
+import com.shaft.gui.browser.BrowserFactory;
+import task1.Environment;
+import task1.Registerarion;
+
+public class Checkout {
+	
+	   private WebDriver driver;
+	  
+  @Test(priority = 1)
+  public void Select_ted() {
+
+   new Registerarion(driver).Register();
+   
+  }
+  
+
+  @BeforeMethod
+  public void beforeMethod() {
+      driver = BrowserFactory.getBrowser();
+      BrowserActions.navigateToURL(driver, Environment.getInstance().baseurl);
+  }
+
+  @AfterMethod
+  public void afterMethod() {
+	  BrowserActions.closeCurrentWindow(driver);
+  }
+
+  @BeforeClass
+  public void beforeClass() {
+    
+  }
+  
+}

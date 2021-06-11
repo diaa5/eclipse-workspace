@@ -1,0 +1,45 @@
+package task1;
+import org.testng.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+import com.shaft.gui.element.ElementActions;
+import com.shaft.validation.Assertions;
+
+public class Cart_checkout {
+	
+	private WebDriver driver;
+	private By Home=By.xpath("//span[normalize-space()='Home']");
+    private By Email=By.id("email_create");
+    private By first_name=By.id("customer_firstname");
+    private By lastname=By.id("customer_lastname");
+    private By password=By.id("passwd");
+    
+    public Cart_checkout(WebDriver driver) {
+    	this.driver = driver;
+        }
+    
+    public void checkout()
+    {
+ 	   
+ 	   new ElementActions(driver).click(sign_in);
+ 	   new ElementActions(driver).type(Email, "diaatest6@gmail.com").keyPress(Email, Keys.ENTER);
+ 	   new ElementActions(driver).type(first_name, "diaa");
+ 	   new ElementActions(driver).type(lastname, "sayed");
+ 	   new ElementActions(driver).typeAppend(password, "123456");
+ 	   new ElementActions(driver).type(add_firstname, "diaa1");
+ 	   new ElementActions(driver).type(add_lastname, "sayed2");
+ 	   new ElementActions(driver).type(address, "abcdef");
+ 	   new ElementActions(driver).type(city, "cairo");
+ 	    Select drpstate = new Select(driver.findElement(By.id("id_state")));
+ 	    Select drpscount = new Select(driver.findElement(By.id("id_country")));
+ 	   drpstate.selectByVisibleText("Alaska");
+ 	   new ElementActions(driver).typeAppend(postcode, "12345");
+ 	   drpscount.selectByVisibleText("United States");
+ 	   new ElementActions(driver).typeAppend(mobile, "0123456");
+ 	   new ElementActions(driver).type(alias, "abc");
+ 	   new ElementActions(driver).click(create);
+
+}
