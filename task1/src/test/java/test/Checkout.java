@@ -8,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 import com.shaft.gui.browser.BrowserActions;
 import com.shaft.gui.browser.BrowserFactory;
 import com.shaft.tools.io.ExcelFileManager;
-
 import task1.Environment;
 import task1.Registerarion;
 import task1.Login;
@@ -23,14 +22,14 @@ public class Checkout {
 	  new Registerarion(driver).Register();
    
   }
-  @Test
+  @Test(priority = 2)
   public void Login() {
 
 	  new Login(driver).login(simpleSearch.getCellData("user1", "Data1"),simpleSearch.getCellData("user1", "Data2"));
    
   }
   
-  @Test
+  @Test(priority = 3)
   public void checkout() {
 
 	  new Login(driver).login(simpleSearch.getCellData("user1", "Data1"),simpleSearch.getCellData("user1", "Data2"));

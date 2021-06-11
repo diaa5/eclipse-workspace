@@ -1,10 +1,8 @@
 package task1;
 
-import org.testng.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import com.shaft.gui.element.ElementActions;
 import com.shaft.validation.Assertions;
@@ -25,6 +23,7 @@ public class Registerarion {
     private By mobile=By.id("phone_mobile");
     private By alias=By.id("alias");
     private By create=By.xpath("//span[normalize-space()='Register']");
+    private By my_account=By.xpath("//h1[normalize-space()='My account']");
 
 
     String URL ;
@@ -36,12 +35,12 @@ public class Registerarion {
    {
 	   
 	   new ElementActions(driver).click(sign_in);
-	   new ElementActions(driver).type(Email, "diaatest6@gmail.com").keyPress(Email, Keys.ENTER);
+	   new ElementActions(driver).type(Email, "diaatest446@gmail.com").keyPress(Email, Keys.ENTER);
 	   new ElementActions(driver).type(first_name, "diaa");
 	   new ElementActions(driver).type(lastname, "sayed");
 	   new ElementActions(driver).typeAppend(password, "123456");
-	   new ElementActions(driver).type(add_firstname, "diaa1");
-	   new ElementActions(driver).type(add_lastname, "sayed2");
+	   new ElementActions(driver).type(add_firstname, "diaa");
+	   new ElementActions(driver).type(add_lastname, "sayed");
 	   new ElementActions(driver).type(address, "abcdef");
 	   new ElementActions(driver).type(city, "cairo");
 	    Select drpstate = new Select(driver.findElement(By.id("id_state")));
@@ -50,8 +49,9 @@ public class Registerarion {
 	   new ElementActions(driver).typeAppend(postcode, "12345");
 	   drpscount.selectByVisibleText("United States");
 	   new ElementActions(driver).typeAppend(mobile, "0123456");
-	   new ElementActions(driver).type(alias, "abc");
+	   new ElementActions(driver).typeAppend(alias, "abc");
 	   new ElementActions(driver).click(create);
+	  
 
 
    }
